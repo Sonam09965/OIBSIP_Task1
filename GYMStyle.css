@@ -1,0 +1,97 @@
+/* CSS Reset */
+body{
+    color: white;
+    margin: 0px;
+    padding: 0px;
+    background: url('image/workout1.jpg');
+}
+.left{
+    display: inline-block; /*since div is an block element so we apply display inline . */
+    left: 40px;
+    top: 10px;
+    /* border: 2px solid red; */
+    position: absolute; /*to place our left box in absolute left position so that it should
+                           take/eat the place of mid.*/
+}
+.left img{
+    width: 80px;              /*This properties applied for Image(workout4) which is used for logo*/
+}
+.left div{     
+    line-height: 19px;                /*This properties applied for Sonam's Fitness*/
+    text-align: center;
+    font-size: 12px;
+    font-weight: bold;
+}
+.mid{
+    display: block; /*To place middle box in center.*/
+    width: 36%;
+    margin: 29px auto;           /*to place box in middle we need to set three things with margin 
+                                                 1) display should be block
+                                                 2) margin should be auto
+                                                 3) width must be given according to the user.*/
+    /* border: 2px solid green; */
+}
+.right{
+    position: absolute; /*to place our right box in absolute right position.*/
+    right: 34px;
+    top: 43px;
+    display: inline-block;
+    /* border: 2px solid yellow; */
+}
+.navbar{
+    display: inline-block;   /*To arrange the list items into a single line*/
+}
+.navbar li{
+    display: inline-block;  /*To arrange the list items into a single line*/
+    font-size: 20px;  /*Giving the font size of Home, About Us, Fitness Calculator, Contact Us*/
+}
+.navbar li a{
+    color: white;
+    text-decoration: none;    /*To remove the unde lines of navbar lists.*/
+    padding: 34px 23px;  /*Giving the padding(len, brdth) in between Home, About Us, Fitness Calculator, Contact Us*/
+}
+.navbar li a:hover,  /*The list on which user is entering or the list which is active will show this properties.*/
+.navbar li a:active{       
+    text-decoration: underline;
+    color: grey;
+}
+.btn{
+    font-family:'Roboto Condensed';
+    margin: 0px 9px;     /* Horizontal margin between contact and email. */
+    background-color: black; 
+    color:aliceblue;  /* Color of fonts*/
+    padding: 4px 14px;  /* Padding(Horizontal gap) between contact and email. */
+    border: 2px solid gray;
+    border-radius: 10px;  /*Provides oval shape to button btn*/
+    font-size: 15px;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: rgb(68, 66, 66);
+}
+.container{
+    border: 2px solid white;
+    margin: 106px 80px;
+    padding: 75px;
+    width: 33%;
+    border-radius: 28px;
+}
+.form-group input{
+    text-align: center;
+    display: block;
+    margin: 9px auto;
+    width: 508px;
+    padding: 1px;
+    border: 2px solid black;
+    font-size: 25px;
+    border-radius: 8px;
+    font-family: 'Roboto Condensed';
+}
+.container h1{
+    text-align: center;
+}
+.container button{
+    display: block;
+    width: 23%;
+    margin: 20px auto;
+}
